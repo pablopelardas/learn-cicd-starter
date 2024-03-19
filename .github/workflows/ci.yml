@@ -21,3 +21,6 @@ jobs:
       - name: Run tests
         run: go test ./... --cover
 
+      - name: Test format
+        run: test -z $(go fmt ./...)
+
